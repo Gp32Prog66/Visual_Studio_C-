@@ -38,3 +38,13 @@ C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\ref\Visual_Studio_C#.d
 C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Visual_Studio_C#.pdb
 C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Visual_Studio_C#.genruntimeconfig.cache
 C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Visual_Studio_C#.csproj.CopyComplete
+C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\About_Me.cshtml.g.cs
+C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\Caffeine_Killer.cshtml.g.cs
+C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\Linked_List.cshtml.g.cs
+C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\Music_Player.cshtml.g.cs
+C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\Shared\_About_Me.cshtml.g.cs
+C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\Shared\_Caffeine_Killer.cshtml.g.cs
+C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\Shared\_Linked_List.cshtml.g.cs
+C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\Shared\_Music_Player.cshtml.g.cs
+C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\Shared\_Three_Cs.cshtml.g.cs
+C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\ThreeC's.cshtml.g.cs
