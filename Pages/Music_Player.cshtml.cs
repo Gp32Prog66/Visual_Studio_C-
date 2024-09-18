@@ -1,3 +1,5 @@
+using System.Media;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +21,10 @@ namespace Visual_Studio_C_.Pages
 
         public void OnGet()
         {
+            var filePath = string.Empty;
+            var fileContent = string.Empty;
 
+          
         }
     }
 }

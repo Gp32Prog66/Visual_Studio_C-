@@ -19,7 +19,7 @@ namespace Visual_Studio_C_.Pages
 
         public void OnGet()
         {
-
+            
         }
     }
 }
