@@ -21,6 +21,9 @@ namespace Visual_Studio_C_.Pages
 
         public void OnGet()
         {
+
+            /*
+
             LinkedList<String> csharp_linked_list = new LinkedList<String>();
 
             
@@ -35,7 +38,7 @@ namespace Visual_Studio_C_.Pages
             {
                 Console.WriteLine(str);
             }
-            
+            */
         }
     }
 }
