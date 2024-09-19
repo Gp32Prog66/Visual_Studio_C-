@@ -47,4 +47,4 @@ C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\Shared\_Ca
 C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\Shared\_Linked_List.cshtml.g.cs
 C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\Shared\_Music_Player.cshtml.g.cs
 C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\Shared\_Three_Cs.cshtml.g.cs
-C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\ThreeC's.cshtml.g.cs
+C:\Users\John\Documents\Visual_Studio_C#\obj\Debug\net5.0\Razor\Pages\Three_Cs.cshtml.g.cs
