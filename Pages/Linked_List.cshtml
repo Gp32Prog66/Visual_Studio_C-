@@ -1,10 +1,42 @@
 ﻿@page
 @model IndexModel
-@{
-    ViewData["Title"] = "Home page";
-}
 
 <div class="text-center">
     <h1 class="display-4">Linked List</h1>
     <p>Create a linked list and displaying it on screen</a>.</p>
 </div>
+
+@{
+    ViewData["Title"] = "Home page";
+
+LinkedList<String> csharp_linked_list = new LinkedList<String>();
+
+
+            csharp_linked_list.AddFirst("Keyboard");
+            csharp_linked_list.AddFirst("Mouse");
+            csharp_linked_list.AddLast("Mouse Pad");
+            csharp_linked_list.AddFirst("Monitor");
+
+            <p>In my line of code, I've added a Keyboard, Mouse, Mouse Pad, and a Monitor</p> <br><br>
+
+            <p>Here is my linke of code <br>
+            csharp_linked_list.AddFirst("Keyboard"); <br>
+            csharp_linked_list.AddFirst("Mouse"); <br>
+            csharp_linked_list.AddLast("Mouse Pad"); <br>
+            csharp_linked_list.AddFirst("Monitor"); <br>
+            </p>  
+    
+            //Print String
+            foreach (string @str in @csharp_linked_list)
+            {
+                Console.WriteLine(str);
+                <p>@str</p>
+            }
+
+                <p>In this code, since I've made Mouse Pad be added list, that is why it appears last on the screen</p>            
+
+}
+
+
+
+

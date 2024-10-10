@@ -21,8 +21,13 @@ namespace Visual_Studio_C_.Pages
 
         public void OnGet()
         {
+            //Declaring FilePath and Contents
             var filePath = string.Empty;
             var fileContent = string.Empty;
+
+            
+
+            
 
           
         }
