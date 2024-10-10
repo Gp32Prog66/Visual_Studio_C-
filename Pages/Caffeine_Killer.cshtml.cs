@@ -10,6 +10,8 @@ namespace Visual_Studio_C_.Pages
 {
     public class CaffeineKillerModel : PageModel
     {
+        public double? DrinkResults {get; set;}
+
         private readonly ILogger<IndexModel> _logger;
 
         public CaffeineKillerModel(ILogger<IndexModel> logger)
@@ -34,6 +36,12 @@ namespace Visual_Studio_C_.Pages
     numDrinks = Math.Ceiling(numDrinks);
     
     Console.WriteLine("Number of drinks that will kill you {0} ", numDrinks);
+
+        }
+
+        public void CaffeineResults()
+        {
+
         }
     }
 }
