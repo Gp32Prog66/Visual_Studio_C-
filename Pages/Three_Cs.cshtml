@@ -17,6 +17,11 @@
         font-size:x-large;
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
+
+    div.codeDisplay
+    {
+        font-family:'Courier New'; 
+    }
 </style>
 
 <div class="text-center">
@@ -31,5 +36,194 @@
     <li>C: Invented by: Dennis Ritchie  Year:1972   Description:    Low Level Programming Language</li>
     <li>C++: Invented by: Bjarne Stroustrup  Year:1985   Description:    Intermediate Programming Language that Introduced Object Oriented Programming</li>
     <li>C#: Invented by: Anders Hejlsberg, Peter Golde, Scott Wiltamuth  Year:2002   Description:    High Level Programming Language</li>
+
+    <h1>Conditional Statements</h1>
+
+    <div class = "codeDisplay">
+    <h3>Code Demo in C</h3>
+    <blockquote>
+        <pre>
+        #include <"stdio.h"> 
+
+int main() 
+{   
+    int storageRequirements, ramRequirements; 
+    
+    printf("How much storage does your computer have? "); 
+    scanf("%d", &storageRequirements); 
+    
+    if(storageRequirements >= 5) 
+    { 
+        printf("Computer has enough storage for this program\n"); 
+    } 
+    
+    else 
+    { 
+        printf("Computer doesn't have enough storage for this program\n"); 
+    } 
+    
+    
+    printf("How much r.a.m. does your computer have? "); 
+    scanf("%d", &ramRequirements); 
+    
+    
+    if (ramRequirements >= 2) 
+    { 
+        printf("This program should run fine");    
+    } 
+    else if (ramRequirements >= 1 && ramRequirements < 2) 
+    { 
+        printf("This program may run sluggish. Lower the system settings to make it run smoother");    
+    } 
+    else 
+    { 
+        printf("This program will not run."); 
+    } 
+    return 0; 
+}
+    </pre>
+    </blockquote>
+
+    <h3>Code Demo in C++</h3>
+    <blockquote>
+        <pre>
+#include <iostream> 
+
+using namespace std; 
+
+int main() 
+{ 
+    int storageRequirements, ramRequirements;
+    
+    cout << "How much storage does your computer have? ";
+    cin >> storageRequirements;
+    
+    if(storageRequirements >= 5)
+    {
+        cout << "Computer has enough storage for this program\n";
+    }
+    
+    else
+    {
+        cout << "Computer doesn't have enough storage for this program\n";
+    }
+    
+    
+    cout << "How much r.a.m. does your computer have? ";
+    cin >> ramRequirements;
+    
+    
+    if (ramRequirements >= 2)
+    {
+        cout << "This program should run fine";    
+    }
+    else if (ramRequirements >= 1 && ramRequirements < 2)
+    {
+        cout << "This program may run sluggish. Lower the system settings to make it run smoother";   
+    }
+    else
+    {
+        cout << "This program will not run.";
+    }
+    return 0;
+}
+    </pre>
+    </blockquote>
+    
+    <h3>Code Demo in C#</h3>
+    <blockquote>
+    <pre>
+using System;
+class HelloWorld {
+  static void Main() {
+
+    
+    Console.WriteLine("How much storage does your computer have? ");
+    int storageRequirements = Convert.ToInt32(Console.ReadLine());
+    
+    if(storageRequirements >= 5)
+    {
+        Console.WriteLine("Computer has enough storage for this program");
+    }
+    
+    else
+    {
+        Console.WriteLine("Computer doesn't have enough storage for this program");
+    }
+    
+    
+    Console.WriteLine("How much r.a.m. does your computer have? ");
+    
+    int ramRequirements = Convert.ToInt32(Console.ReadLine());
+    
+    if (ramRequirements >= 2)
+    {
+        Console.WriteLine("This program should run fine");    
+    }
+    else if (ramRequirements >= 1 && ramRequirements < 2)
+    {
+        Console.WriteLine("This program may run sluggish. Lower the system settings to make it run smoother");   
+    }
+    else
+    {
+        Console.WriteLine("This program will not run.");
+    }
+    
+    
+  }
+}
+
+    </pre>
+    </blockquote>
+
+</div>
+    <h3>Live Demo in C#</h3>
+@{
+
+    Console.WriteLine("How much storage does your computer have? ");
+    <p>
+    <label for="storageBox">How much storage does your computer have? </label><input type="text" id="storageBox"/>
+    </p>
+    int @storageRequirements;
+    
+    /*
+    if(@storageRequirements >= 5)
+    {
+        <p>"Computer has enough storage for this program" </p>
+    }
+    
+    else
+    {
+        <p>"Computer doesn't have enough storage for this program"</p>
+    }
+    */
+    
+    Console.WriteLine("How much r.a.m. does your computer have? ");
+    <p>
+    <label for="ramBox">How much RAM does your computer have? </label><input type="text" id="ramBox"/>
+    </p>
+
+    int @ramRequirements;
+
+    //JavaScript
+    <script type = "text/javascript">
+
+    </script>
+   /* 
+    if (@ramRequirements >= 2)
+    {
+        <p>"This program should run fine" </p>
+    }
+    else if (@ramRequirements >= 1 && @ramRequirements < 2)
+    {
+        <p>"This program may run sluggish. Lower the system settings to make it run smoother"</p>
+    }
+    else
+    {
+        <p>"This program will not run.") </p>
+    }
+    */
+    }
+
 </div>
 </div>

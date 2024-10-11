@@ -43,5 +43,15 @@ namespace Visual_Studio_C_.Pages
         {
 
         }
+
+        static void calculateCaffeine(double @numDrinks, double @input)
+        {
+            //Calculations
+    @numDrinks = 10000 / @input;
+    
+@numDrinks = Math.Ceiling(@numDrinks);
+
+    
+        }
     }
 }
