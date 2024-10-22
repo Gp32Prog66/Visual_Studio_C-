@@ -18,6 +18,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
+<div class = "headOne"> 
+ <div class="text-center"> 
+    <h1 class="display-4">Coffee Temperatures</h1>
+   </div>
+    <p>This program demonstrates conditional statements in C# Web Development</a>!</p>
+    <br>
+
+    <p>Coffee One is 50 degrees Fahrenheit</p>
+    <br>
+    <p>Coffee Two is 140 degrees Fahrenheit</p>
+    <br>
+    <p>Coffee Three is 200 degrees Fahrenheit</p>
+
+
 @{
     ViewData["Title"] = "Caffeine Killer";
 
@@ -131,28 +145,7 @@ else
 
  <div class = "headOne"> 
  <div class="text-center"> 
-    <h1 class="display-4">Caffeine Killer</h1>
    </div>
-    <p>This program will calculate how many milligrams of caffeine it will take to kill you</a>!</p>
-
-     
-    <form method = "post">
-    <!-- User Input -->
-    <label for="input">Enter the amount of caffeine in milligrams</label>
-    <input type="number" id="input" required />
-    <br/>
-    <button type="submit">Calculate</button>
-    </form>
-
-    <!-- Display Results -->
-    @if (Model.DrinkResults.HasValue)
-    {
-        <h1>Number of Drinks that will Kill you are @Model.DrinkResults.Value</h1>
-    } 
-    else
-    {
-        <h1>Error</h1>
-    }
     
  </div> 
 </body>
