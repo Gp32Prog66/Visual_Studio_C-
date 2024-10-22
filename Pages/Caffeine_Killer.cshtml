@@ -1,21 +1,8 @@
 ﻿@page
 @model IndexModel
-@{
-    ViewData["Title"] = "Home page";
 
-      //Declare Variables
-      double @input, @numDrinks;
-      
-    Console.WriteLine("Enter the amount of caffeine in milligrams");
-   @input = Convert.ToDouble(Console.ReadLine());
-    
-    //Calculations
-    @numDrinks = 10000 / @input;
-    
-    @numDrinks = Math.Ceiling(@numDrinks);
-    
-    Console.WriteLine("Number of drinks that will kill you {0} ", @numDrinks);
-}
+<!DOCTYPE html>
+<html lang="en">
 
 <!--CSS-->
 <style>
@@ -26,22 +13,148 @@
 
 </style>
 
-<div class = "headOne">
-<div class="text-center">
-    <h1 class="display-4">Caffeine Killer</h1>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+@{
+    ViewData["Title"] = "Caffeine Killer";
+
+
+int coffeeOne = 50; //Cold Coffee 
+int coffeeTwo = 140; //Hot Coffee
+int coffeeThree = 200; //Dangerous Coffee
+
+@if (coffeeOne <= 119)
+{
+    <div class="cold-coffee" style="color: blue;">
+        <h1>Cold Coffee</h1>
+
     </div>
+}
+else if (coffeeOne >= 120 || coffeeOne <= 140)
+{
+    <div class="hot-coffee" style="color: chocolate;">
+        <h1>Nice Cup of Coffee</h1>
+
+    </div>
+}
+
+else if (coffeeOne >= 141)
+{
+    <div class="scolding-coffee" style="color: red;">
+        <h1>Danger! Scolding Hot Coffee</h1>
+
+    </div>
+}
+
+else 
+{
+    <h2>Error Occured</h2>
+}
+
+@if (coffeeTwo <= 119)
+{
+    <div class="cold-coffee" style="color: blue;">
+        <h1>Cold Coffee</h1>
+
+    </div>
+}
+else if (coffeeTwo >= 120 && coffeeTwo <= 140)
+{
+    <div class="hot-coffee" style="color: chocolate;">
+        <h1>Nice Cup of Coffee</h1>
+
+    </div>
+}
+
+else if(coffeeTwo >= 141)
+{
+    <div class="scolding-coffee" style="color: red;">
+        <h1>Danger! Scolding Hot Coffee</h1>
+
+    </div>
+}
+
+else 
+{
+    <h2>Error Occured</h2>
+}
+
+@if (coffeeThree <= 119)
+{
+    <div class="cold-coffee" style="color: blue;">
+        <h1>Cold Coffee</h1>
+
+    </div>
+}
+else if (coffeeThree >= 120 && coffeeThree <= 140)
+{
+    <div class="hot-coffee" style="color: chocolate;">
+        <h1>Nice Cup of Coffee</h1>
+
+    </div>
+}
+
+else if(coffeeThree >= 141)
+{
+    <div class="scolding-coffee" style="color: red;">
+        <h1>Danger! Scolding Hot Coffee</h1>
+
+    </div>
+}
+
+else 
+{
+    <h2>Error Occured</h2>
+}
+
+
+      //Declare Variables
+      //double @input, @numDrinks;
+      
+    //Console.WriteLine("Enter the amount of caffeine in milligrams");
+   //@input = Convert.ToDouble(Console.ReadLine());
+    
+    //Calculations
+   // @numDrinks = 10000 / @input;
+    
+    //@numDrinks = Math.Ceiling(@numDrinks);
+    
+    //Console.WriteLine("Number of drinks that will kill you {0} ", @numDrinks);
+}
+
+
+
+<body>
+
+ <div class = "headOne"> 
+ <div class="text-center"> 
+    <h1 class="display-4">Caffeine Killer</h1>
+   </div>
     <p>This program will calculate how many milligrams of caffeine it will take to kill you</a>!</p>
 
      
-
+    <form method = "post">
     <!-- User Input -->
     <label for="input">Enter the amount of caffeine in milligrams</label>
-    <input type="text" id="input" name="input">
-    <br>
-
+    <input type="number" id="input" required />
+    <br/>
     <button type="submit">Calculate</button>
+    </form>
 
-    <!-- Display Results 
+    <!-- Display Results -->
+    @if (Model.DrinkResults.HasValue)
+    {
+        <h1>Number of Drinks that will Kill you are @Model.DrinkResults.Value</h1>
+    } 
+    else
+    {
+        <h1>Error</h1>
+    }
     
-    
-</div>
+ </div> 
+</body>
+</html> 
+

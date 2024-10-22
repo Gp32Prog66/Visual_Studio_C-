@@ -13,6 +13,8 @@ namespace Visual_Studio_C_.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
+        public double? DrinkResults {get; set;}
+
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;

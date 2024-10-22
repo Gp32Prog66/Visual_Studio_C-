@@ -21,7 +21,7 @@ namespace Visual_Studio_C_.Pages
 
         public void OnGet()
         {
-                  
+            /*      
 //Source Code of Caffeine Killer
 
       //Declare Variables
@@ -36,22 +36,32 @@ namespace Visual_Studio_C_.Pages
     numDrinks = Math.Ceiling(numDrinks);
     
     Console.WriteLine("Number of drinks that will kill you {0} ", numDrinks);
-
+        */
         }
 
-        public void CaffeineResults()
+        public void OnPost(double @input)
         {
+            double @numDrinks;
+
+            @numDrinks = 10000 / @input;
+
+            @numDrinks = Math.Ceiling(@numDrinks);
+
+            DrinkResults = @numDrinks;
 
         }
 
-        static void calculateCaffeine(double @numDrinks, double @input)
+/*
+        public void CaffeineResults(double @input)
         {
-            //Calculations
-    @numDrinks = 10000 / @input;
-    
-@numDrinks = Math.Ceiling(@numDrinks);
+            double @numDrinks;
 
-    
+            @numDrinks = 10000 / @input;
+
+            @numDrinks = Math.Ceiling(@numDrinks);
+
+            DrinkResults = @numDrinks;
         }
+        */
     }
 }

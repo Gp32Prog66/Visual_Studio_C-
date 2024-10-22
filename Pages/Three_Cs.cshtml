@@ -180,13 +180,18 @@ class HelloWorld {
     <h3>Live Demo in C#</h3>
 @{
 
-    Console.WriteLine("How much storage does your computer have? ");
+   // Console.WriteLine("How much storage does your computer have? ");
+    <form method = "post">
     <p>
     <label for="storageBox">How much storage does your computer have? </label><input type="text" id="storageBox"/>
     </p>
-    int @storageRequirements;
+   <!-- <input type="number" id="storage" required /> -->
+    <br/>
+    <button type="submit">Check Storage</button>
+    </form>
+    int @storageRequirements = 0;
     
-    /*
+    
     if(@storageRequirements >= 5)
     {
         <p>"Computer has enough storage for this program" </p>
@@ -196,20 +201,26 @@ class HelloWorld {
     {
         <p>"Computer doesn't have enough storage for this program"</p>
     }
-    */
     
-    Console.WriteLine("How much r.a.m. does your computer have? ");
+    
+   // Console.WriteLine("How much r.a.m. does your computer have? ");
+    <form method = "post">
     <p>
     <label for="ramBox">How much RAM does your computer have? </label><input type="text" id="ramBox"/>
     </p>
+   <!-- <input type="number" id="ram" required /> -->
+    <br/>
+    <button type="submit">Check RAM</button> 
+    </form>
+    
 
-    int @ramRequirements;
+    int @ramRequirements = 0;
 
     //JavaScript
     <script type = "text/javascript">
 
     </script>
-   /* 
+    
     if (@ramRequirements >= 2)
     {
         <p>"This program should run fine" </p>
@@ -220,9 +231,9 @@ class HelloWorld {
     }
     else
     {
-        <p>"This program will not run.") </p>
+        <p>"This program will not run." </p>
     }
-    */
+    
     }
 
 </div>
