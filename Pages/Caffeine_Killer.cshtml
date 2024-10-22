@@ -11,6 +11,21 @@
         background-color: plum;
     }
 
+    div.cold-coffee
+    {
+        color: blue;
+    }
+
+    div.hot-coffee
+    {
+        color: chocolate;
+    }
+
+    div.scolding-coffee
+    {
+        color: red;
+    }
+
 </style>
 
 <head>
@@ -33,23 +48,24 @@
 
 
 @{
-    ViewData["Title"] = "Caffeine Killer";
+    ViewData["Title"] = "Coffee Temperatures";
 
 
 int coffeeOne = 50; //Cold Coffee 
 int coffeeTwo = 140; //Hot Coffee
 int coffeeThree = 200; //Dangerous Coffee
 
+//Conditional Statement
 @if (coffeeOne <= 119)
 {
-    <div class="cold-coffee" style="color: blue;">
+    <div class="cold-coffee">
         <h1>Cold Coffee</h1>
 
     </div>
 }
 else if (coffeeOne >= 120 || coffeeOne <= 140)
 {
-    <div class="hot-coffee" style="color: chocolate;">
+    <div class="hot-coffee">
         <h1>Nice Cup of Coffee</h1>
 
     </div>
@@ -57,7 +73,7 @@ else if (coffeeOne >= 120 || coffeeOne <= 140)
 
 else if (coffeeOne >= 141)
 {
-    <div class="scolding-coffee" style="color: red;">
+    <div class="scolding-coffee">
         <h1>Danger! Scolding Hot Coffee</h1>
 
     </div>
@@ -70,14 +86,14 @@ else
 
 @if (coffeeTwo <= 119)
 {
-    <div class="cold-coffee" style="color: blue;">
+    <div class="cold-coffee">
         <h1>Cold Coffee</h1>
 
     </div>
 }
 else if (coffeeTwo >= 120 && coffeeTwo <= 140)
 {
-    <div class="hot-coffee" style="color: chocolate;">
+    <div class="hot-coffee">
         <h1>Nice Cup of Coffee</h1>
 
     </div>
@@ -85,7 +101,7 @@ else if (coffeeTwo >= 120 && coffeeTwo <= 140)
 
 else if(coffeeTwo >= 141)
 {
-    <div class="scolding-coffee" style="color: red;">
+    <div class="scolding-coffee">
         <h1>Danger! Scolding Hot Coffee</h1>
 
     </div>
@@ -98,14 +114,14 @@ else
 
 @if (coffeeThree <= 119)
 {
-    <div class="cold-coffee" style="color: blue;">
+    <div class="cold-coffee">
         <h1>Cold Coffee</h1>
 
     </div>
 }
 else if (coffeeThree >= 120 && coffeeThree <= 140)
 {
-    <div class="hot-coffee" style="color: chocolate;">
+    <div class="hot-coffee">
         <h1>Nice Cup of Coffee</h1>
 
     </div>
@@ -113,7 +129,7 @@ else if (coffeeThree >= 120 && coffeeThree <= 140)
 
 else if(coffeeThree >= 141)
 {
-    <div class="scolding-coffee" style="color: red;">
+    <div class="scolding-coffee">
         <h1>Danger! Scolding Hot Coffee</h1>
 
     </div>
@@ -123,24 +139,10 @@ else
 {
     <h2>Error Occured</h2>
 }
-
-
-      //Declare Variables
-      //double @input, @numDrinks;
-      
-    //Console.WriteLine("Enter the amount of caffeine in milligrams");
-   //@input = Convert.ToDouble(Console.ReadLine());
-    
-    //Calculations
-   // @numDrinks = 10000 / @input;
-    
-    //@numDrinks = Math.Ceiling(@numDrinks);
-    
-    //Console.WriteLine("Number of drinks that will kill you {0} ", @numDrinks);
 }
 
 
-
+<!-- Center Page -->
 <body>
 
  <div class = "headOne"> 
